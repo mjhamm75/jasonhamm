@@ -18,10 +18,25 @@ define(function(require) {
     },
 
     initialize: function() {
-      _.bindAll(this, 'about');
-      Backbone.on('location:about', this.about, this);
-      Backbone.on('location:blog', this.blog, this);
-      Backbone.on('location:book', this.book, this);
+      _.bind(this.router, this);
+      Backbone.on('location', this.router, this);
+    },
+
+    router: function(data) {
+      switch(data) {
+      case 'about':
+        var about = new About();
+        $('#body').html(about.render().el);
+        break;
+      case 'blog':
+        var blog = new Blog();
+        $('#body').html(blog.render().el);
+        break;
+      case 'book':
+        var book = new Book();
+        $('#body').html(book.render().el);
+        break;
+      }
     },
 
     main: function() {
@@ -30,24 +45,6 @@ define(function(require) {
 
       this.currentView = new MainBody();
       $('#body').html(this.currentView.render());
-    },
-
-    about: function() {
-      // this.currentView.close();
-      var about = new About();
-      $('#body').html(about.render().el);
-    },
-
-    blog: function() {
-      // this.currentView.close();
-      var blog = new Blog();
-      $('#body').html(blog.render().el);
-    },
-
-    book: function() {
-      // this.currentView.close();
-      var book = new Book();
-      $('#body').html(book.render().el);
     }
   });
 

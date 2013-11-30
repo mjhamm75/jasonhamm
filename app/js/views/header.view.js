@@ -19,15 +19,15 @@ define(function(require) {
     },
 
     about: function() {
-      Backbone.trigger('location:about', 'about');
+      Backbone.trigger('location', 'about');
     },
 
     blog: function() {
-      Backbone.trigger('location:blog', 'blog');
+      Backbone.trigger('location', 'blog');
     },
 
     book: function() {
-      Backbone.trigger('location:book', 'book');
+      Backbone.trigger('location', 'book');
     }
 
   });
