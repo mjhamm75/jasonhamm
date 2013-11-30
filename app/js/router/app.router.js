@@ -13,7 +13,7 @@ define(function(require) {
 
     list: function() {
       var header = new Header();
-      $('#header').html(header.render());
+      $('#header').html(header.render().el);
 
       var body = new MainBody();
       $('#app').html(body.render());
