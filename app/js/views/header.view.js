@@ -15,7 +15,8 @@ define(function(require) {
     events: {
       'click #about': 'about',
       'click #blog': 'blog',
-      'click #book': 'book'
+      'click #book': 'book',
+      'click #main': 'main'
     },
 
     about: function() {
@@ -28,6 +29,10 @@ define(function(require) {
 
     book: function() {
       Backbone.trigger('location', 'book');
+    },
+
+    main: function() {
+      Backbone.trigger('location', 'main');
     }
 
   });

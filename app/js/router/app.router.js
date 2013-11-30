@@ -8,7 +8,7 @@ define(function(require) {
   var About = require('views/about.view');
   var Blog = require('views/blog.view');
   var Book = require('views/books.view');
-  var MainBody = require('views/main.body.view');
+  var Main = require('views/main.body.view');
 
   var Router = Backbone.Router.extend({
     currentView: null,
@@ -36,6 +36,9 @@ define(function(require) {
         var book = new Book();
         $('#body').html(book.render().el);
         break;
+      case 'main':
+        var main = new Main();
+        $('#body').html(main.render().el);
       }
     },
 
@@ -43,7 +46,7 @@ define(function(require) {
       var header = new Header();
       $('#header').html(header.render().el);
 
-      this.currentView = new MainBody();
+      this.currentView = new Main();
       $('#body').html(this.currentView.render());
     }
   });
