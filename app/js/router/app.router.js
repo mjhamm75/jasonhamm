@@ -7,7 +7,8 @@ define(function(require) {
 
   var Router = Backbone.Router.extend({
     routes: {
-      "": "list"
+      "": "main",
+      "about": "about"
     },
 
     list: function() {
@@ -16,6 +17,15 @@ define(function(require) {
 
       var body = new MainBody();
       $('#app').html(body.render());
+    },
+
+    about: function() {
+      var header = new Header();
+      $('#header').html(header.render().el);
+    },
+
+    test: function() {
+      console.log('Test');
     }
   });
 

@@ -8,7 +8,16 @@ define(function(require) {
     template: headerTemplate,
 
     render: function() {
-      return this.template();
+      this.$el.html(this.template());
+      return this;
+    },
+
+    events: {
+      'click #about': 'about'
+    },
+
+    about: function() {
+      this.trigger('location', 'about');
     }
   });
 
