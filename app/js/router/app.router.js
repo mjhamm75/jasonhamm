@@ -15,7 +15,8 @@ define(function(require) {
   var Router = Backbone.Router.extend({
     currentView: null,
     routes: {
-      '': 'main'
+      '':'main',
+      ':action': 'main'
     },
 
     initialize: function() {
@@ -49,15 +50,18 @@ define(function(require) {
         var project = new Project();
         $('#body').html(project.render().el);
         break;
+      default:
+        var main = new Main();
+        $('#body').html(main.render());
+        break;
       }
     },
 
-    main: function() {
+    main: function(action) {
       var header = new Header();
       $('#header').html(header.render().el);
 
-      this.currentView = new Main();
-      $('#body').html(this.currentView.render());
+      this.router(action);
     }
   });
 
