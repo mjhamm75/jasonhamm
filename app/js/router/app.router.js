@@ -9,12 +9,13 @@ define(function(require) {
   var Blog = require('views/blog.view');
   var Book = require('views/books.view');
   var Main = require('views/main.body.view');
+  var Podcast = require('views/podcast.view');
+  var Project = require('views/project.view');
 
   var Router = Backbone.Router.extend({
     currentView: null,
     routes: {
       '': 'main'
-
     },
 
     initialize: function() {
@@ -39,6 +40,15 @@ define(function(require) {
       case 'main':
         var main = new Main();
         $('#body').html(main.render().el);
+        break;
+      case 'podcast':
+        var podcast = new Podcast();
+        $('#body').html(podcast.render().el);
+        break;
+      case 'project':
+        var project = new Project();
+        $('#body').html(project.render().el);
+        break;
       }
     },
 
