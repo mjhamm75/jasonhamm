@@ -11,7 +11,11 @@ define(function(require) {
       "about": "about"
     },
 
-    list: function() {
+    initialize: function() {
+      Backbone.on('location', this.test);
+    },
+
+    main: function() {
       var header = new Header();
       $('#header').html(header.render().el);
 
