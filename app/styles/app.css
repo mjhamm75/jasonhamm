@@ -5990,17 +5990,19 @@ td.visible-print {
     display: none !important;
   }
 }
-#page-header {
+.top-offset {
   margin-top: 52px;
+}
+.top-offset #page-header {
   background: aliceblue;
 }
-#page-header h1 {
+.top-offset #page-header h1 {
   font-size: 60px;
 }
-#page-header p {
+.top-offset #page-header p {
   font-size: 21px;
   margin-right: 380px;
 }
-#page-header .container {
+.top-offset #page-header .container {
   margin-left: 85px;
 }

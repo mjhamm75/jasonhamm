@@ -13,12 +13,23 @@ define(function(require) {
     },
 
     events: {
-      'click #about': 'about'
+      'click #about': 'about',
+      'click #blog': 'blog',
+      'click #book': 'book'
     },
 
     about: function() {
-      this.trigger('location', 'about');
+      Backbone.trigger('location:about', 'about');
+    },
+
+    blog: function() {
+      Backbone.trigger('location:blog', 'blog');
+    },
+
+    book: function() {
+      Backbone.trigger('location:book', 'book');
     }
+
   });
 
   return Header;
