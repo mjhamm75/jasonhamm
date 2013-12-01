@@ -15,10 +15,10 @@ define(function(require) {
     events: {
       'click #about': 'about',
       'click #blog': 'blog',
-      'click #book': 'books',
+      'click #books': 'books',
       'click #main': 'main',
-      'click #podcast': 'podcasts',
-      'click #project': 'projects'
+      'click #podcasts': 'podcasts',
+      'click #projects': 'projects'
     },
 
     about: function() {
@@ -30,7 +30,7 @@ define(function(require) {
     },
 
     books: function() {
-      Backbone.trigger('location', 'book');
+      Backbone.trigger('location', 'books');
     },
 
     main: function() {
@@ -38,11 +38,11 @@ define(function(require) {
     },
 
     podcasts: function() {
-      Backbone.trigger('location', 'podcast');
+      Backbone.trigger('location', 'podcasts');
     },
 
     projects: function() {
-      Backbone.trigger('location', 'project');
+      Backbone.trigger('location', 'projects');
     }
 
   });

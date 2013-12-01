@@ -33,7 +33,7 @@ define(function(require) {
         var blog = new Blog();
         $('#body').html(blog.render().el);
         break;
-      case 'book':
+      case 'books':
         var book = new Book();
         $('#body').html(book.render().el);
         break;
@@ -41,11 +41,11 @@ define(function(require) {
         var main = new Main();
         $('#body').html(main.render().el);
         break;
-      case 'podcast':
+      case 'podcasts':
         var podcast = new Podcast();
         $('#body').html(podcast.render().el);
         break;
-      case 'project':
+      case 'projects':
         var project = new Project();
         $('#body').html(project.render().el);
         break;
