@@ -15,8 +15,7 @@ define(function(require) {
   var Router = Backbone.Router.extend({
     currentView: null,
     routes: {
-      '':'main',
-      ':action': 'main'
+      '':'main'
     },
 
     initialize: function() {
@@ -62,6 +61,10 @@ define(function(require) {
       $('#header').html(header.render().el);
 
       this.router(action);
+    },
+
+    test: function(action) {
+      debugger;
     }
   });
 
