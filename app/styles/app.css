@@ -5993,16 +5993,36 @@ td.visible-print {
 .top-offset {
   margin-top: 52px;
 }
-.top-offset #page-header {
+#page-header {
   background: aliceblue;
 }
-.top-offset #page-header h1 {
+#page-header h1 {
   font-size: 60px;
 }
-.top-offset #page-header p {
+#page-header p {
   font-size: 21px;
   margin-right: 380px;
 }
-.top-offset #page-header .container {
+#page-header .container {
   margin-left: 85px;
+  margin-bottom: 25px;
+}
+#blog-posts {
+  margin-top: 35px;
+}
+#blog-posts .date-header {
+  background-color: #BBB;
+  color: white;
+  padding: 0.4em;
+  letter-spacing: 3px;
+}
+#blog-posts .container h2 {
+  text-decoration: none;
+  color: #258aaf;
+  font-weight: 300;
+}
+#blog-posts .container h4 {
+  margin: 0;
+  margin-top: 20px;
+  position: relative;
 }
