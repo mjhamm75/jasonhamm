@@ -5,7 +5,7 @@ define(function(require) {
 
   var BlogItem = Backbone.Model.extend({
     defaults: {
-      tags: null,
+      tags: 'Javascript',
       date: null
     }
   });

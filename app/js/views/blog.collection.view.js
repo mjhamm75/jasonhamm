@@ -33,7 +33,7 @@ define(function(require) {
     },
 
     renderItem: function(blog) {
-      this.$el.find('#blog-posts').append(blog.render().el);
+      this.$el.find('#blog-posts').append(blog.render(blog).el);
     }
   });
 

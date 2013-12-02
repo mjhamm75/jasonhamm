@@ -7,8 +7,8 @@ define(function(require) {
   var BlogItemView = Backbone.View.extend({
     template: blogItemTemplate,
 
-    render: function() {
-      this.$el.html(this.template());
+    render: function(blog) {
+      this.$el.html(this.template({blog: blog.model.toJSON()}));
       return this;
     }
   });

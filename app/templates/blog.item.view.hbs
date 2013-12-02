@@ -1,6 +1,8 @@
+<li>
   <div class="container">
+    {{#blog}}
     <span class="date-header">01 December 2013</span>
-    <span class="label label-primary">Javascript</span>
+    <span class="label label-primary">{{tags}}</span>
     <span class="label label-success">Angular</span>
     <h2>This is a sample blog title</h2>
     <h4>Where to start</h4>
@@ -35,3 +37,5 @@
     </code>
     </pre>
   </div>
+  {{/blog}}
+</li>

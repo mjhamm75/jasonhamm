@@ -6010,11 +6010,19 @@ td.visible-print {
 #blog-posts {
   margin-top: 35px;
 }
+#blog-posts li {
+  border-top: 10px grey solid;
+  padding-top: 30px;
+  margin-bottom: 35px;
+}
 #blog-posts .date-header {
   background-color: #BBB;
   color: white;
   padding: 0.4em;
   letter-spacing: 3px;
+}
+#blog-posts .container {
+  margin-top: 30px;
 }
 #blog-posts .container h2 {
   text-decoration: none;
