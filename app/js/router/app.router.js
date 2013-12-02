@@ -11,6 +11,9 @@ define(function(require) {
   var Main = require('views/main.body.view');
   var Podcast = require('views/podcast.view');
   var Project = require('views/project.view');
+  // require('DlHighlight');
+  require('highlight');
+
 
   var Router = Backbone.Router.extend({
     currentView: null,
@@ -32,6 +35,9 @@ define(function(require) {
       case 'blog':
         var blog = new Blog();
         $('#body').html(blog.render().el);
+        $("pre").each(function (i, e) {
+          hljs.highlightBlock(e);
+        });
         break;
       case 'books':
         var book = new Book();
