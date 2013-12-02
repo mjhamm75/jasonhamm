@@ -25,6 +25,9 @@ define(function() {
       bootstrap: {
         deps: [ 'jquery' ]
       },
+      DlHighlight: {
+        exports: 'DlHighlight'
+      },
       'jqueryMockAjax': {
         exports: '$.mockjax',
         deps: ['jquery']
@@ -130,6 +133,8 @@ define(function() {
 
       backbone: 'libs/backbone/backbone',
       bootstrap: 'libs/bootstrap/dist/js/bootstrap',
+      DlHighlight: 'libs/hl/hl-all',
+      highlight: 'libs/highlightjs/highlight.pack',
       jquery: 'libs/jquery/jquery',
       jqueryMockAjax: 'libs/jquery-mockjax/jquery.mockjax',
       underscore: 'libs/underscore/underscore',
