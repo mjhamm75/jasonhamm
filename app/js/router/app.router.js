@@ -1,4 +1,4 @@
-/* global _ */
+/* global _ , hljs*/
 
 define(function(require) {
   'use strict';
@@ -6,7 +6,7 @@ define(function(require) {
   var Backbone = require('backbone');
   var Header = require('views/header.view');
   var About = require('views/about.view');
-  var Blog = require('views/blog.view');
+  var Blog = require('views/blog.collection.view');
   var Book = require('views/books.view');
   var Main = require('views/main.body.view');
   var Podcast = require('views/podcast.view');
@@ -56,8 +56,8 @@ define(function(require) {
         $('#body').html(project.render().el);
         break;
       default:
-        var main = new Main();
-        $('#body').html(main.render());
+        var main1 = new Main();
+        $('#body').html(main1.render());
         break;
       }
     },
@@ -69,9 +69,9 @@ define(function(require) {
       this.router(action);
     },
 
-    test: function(action) {
-      debugger;
-    }
+    // test: function(action) {
+    //   // debugger;
+    // }
   });
 
   return Router;

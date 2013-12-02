@@ -8,7 +8,7 @@ define(function(require) {
     template: testTemplate,
 
     initialize: function() {
-      debugger;
+      // debugger;
     }
   });
   return TestView;
