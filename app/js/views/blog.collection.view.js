@@ -10,7 +10,7 @@ define(function(require) {
     template: blogCollectionTemplate,
 
     initialize: function() {
-      var model1 = new BlogModel({ tags: 'Javascript'});
+      var model1 = new BlogModel({ tags: ['Javascript', 'Angular']});
       var model2 = new BlogModel({ tags: 'Ruby'});
       var model3 = new BlogModel({ tags: 'Angular'});
       this.collection = new Backbone.Collection();
