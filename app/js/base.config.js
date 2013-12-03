@@ -137,6 +137,7 @@ define(function() {
       highlight: 'libs/highlightjs/highlight.pack',
       jquery: 'libs/jquery/jquery',
       jqueryMockAjax: 'libs/jquery-mockjax/jquery.mockjax',
+      markdown: 'libs/markdown/lib/markdown',
       underscore: 'libs/underscore/underscore',
 
       hbs: 'libs/hbs/hbs',

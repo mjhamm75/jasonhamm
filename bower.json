@@ -9,6 +9,7 @@
     "text": "~2.0.10",
     "hbs": "~0.4.0",
     "requirejs-hbs": "*",
-    "bootstrap": "~3.0.2"
+    "bootstrap": "~3.0.2",
+    "markdown": "~0.5.0"
   }
 }
