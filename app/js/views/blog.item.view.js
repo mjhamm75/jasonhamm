@@ -3,6 +3,7 @@ define(function(require) {
 
   var Backbone = require('backbone');
   var blogItemTemplate = require('hbs!app.templates/blog.item.view');
+  require('utilities/handlebars.helpers');
 
   var BlogItemView = Backbone.View.extend({
     template: blogItemTemplate,
