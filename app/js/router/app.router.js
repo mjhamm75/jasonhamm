@@ -11,7 +11,6 @@ define(function(require) {
   var Main = require('views/main.body.view');
   var Podcast = require('views/podcast.view');
   var Project = require('views/project.view');
-  // require('DlHighlight');
   require('highlight');
 
 
