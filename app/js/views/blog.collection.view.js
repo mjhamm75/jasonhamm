@@ -5,6 +5,7 @@ define(function(require) {
   var blogCollectionTemplate = require('hbs!app.templates/blog.collection.view');
   var BlogModel = require('models/blog.item.model');
   var BlogModelView = require('views/blog.item.view');
+  var markdown = require('markdown');
 
   var BlogCollectionView = Backbone.View.extend({
     template: blogCollectionTemplate,
