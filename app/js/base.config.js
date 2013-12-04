@@ -138,6 +138,7 @@ define(function() {
       jquery: 'libs/jquery/jquery',
       jqueryMockAjax: 'libs/jquery-mockjax/jquery.mockjax',
       markdown: 'libs/markdown/lib/markdown',
+      text: 'libs/text/text',
       underscore: 'libs/underscore/underscore',
 
       hbs: 'libs/hbs/hbs',
